@@ -1,0 +1,30 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // The account document, holding job preferences, the resume link and
+    // notification choices. Rules do not cascade, so the saved_jobs rule
+    // below is still required separately.
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Uploaded documents — currently just the resume, stored as bytes on
+    // users/{uid}/files/resume.
+    match /users/{userId}/files/{fileId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // A signed-in user may read and write only their own saved jobs.
+    // Nobody can read another account's bookmarks.
+    match /users/{userId}/saved_jobs/{jobId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Everything else stays closed until it is explicitly opened.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

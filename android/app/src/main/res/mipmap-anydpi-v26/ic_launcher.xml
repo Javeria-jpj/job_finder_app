@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 8+ composes the launcher icon from these two layers and applies its
+  own mask. Without this file the launcher treats ic_launcher.png as a legacy
+  icon: it shrinks the whole bitmap inside a white shape, which is why the
+  arrow looked small however large it was drawn.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>

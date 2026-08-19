@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash background. Deliberately a fixed white rather than
+     ?android:colorBackground: that resolves to black in dark mode, and the
+     logo is drawn for a light surface. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/splash_background" />
+</layer-list>

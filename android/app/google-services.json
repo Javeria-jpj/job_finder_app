@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "594343981380",
+    "project_id": "job-finder-app-21ac8",
+    "storage_bucket": "job-finder-app-21ac8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594343981380:android:6ff0aaf1529f0f6f55a711",
+        "android_client_info": {
+          "package_name": "com.example.job_finder_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594343981380-p0h1e90na7m7h36f4q4clmceiu5bgfhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.job_finder_app",
+            "certificate_hash": "41251dd579495963efdd1cb9b76fb1464e732ff2"
+          }
+        },
+        {
+          "client_id": "594343981380-reoip4ctnbhdfvr93run9n12nhsjo9d8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3mRYaE0V0TEjy8CO7j0x5nfLVdqeNfco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594343981380-reoip4ctnbhdfvr93run9n12nhsjo9d8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "594343981380-dqr5bfi5c1rd76s3gp527shqf99s0n95.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jobFinderApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
